@@ -1,4 +1,5 @@
 pythonenv*
+venv/
 .vscode/
 .venv/
 .env
