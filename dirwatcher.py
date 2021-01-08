@@ -63,7 +63,6 @@ def watch_directory(path, magic_string, extension, interval):
     file_added(file_list, extension)
     file_deleted(file_list)
     for f in files:
-        print(f"f  = {f}")
         path = os.path.join(path, f)
         files[f] = search_for_magic(path, files[f], magic_string)
 
