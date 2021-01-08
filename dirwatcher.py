@@ -22,6 +22,8 @@ logger = logging.getLogger(__name__)
 exit_flag = False
 files = {}
 
+# STILL WORK IN PROGESS, NOT YET COMPLETED.
+
 
 def search_for_magic(filename, start_line, magic_string):
     """Looks for a magic string and its line provided in command."""
