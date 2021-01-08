@@ -6,10 +6,15 @@ Dirwatcher - A long-running program
 __author__ = "Jeffrey Simspon"
 
 import sys
+import logging
+
+
+logger = logging.getLogger(__name__)
 
 
 def search_for_magic(filename, start_line, magic_string):
-    # Your code here
+    """Looks for a magic string and its line provided in command."""
+    logger.info(f"Looking for {magic_string}")
     return
 
 
