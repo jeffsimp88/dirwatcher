@@ -22,12 +22,10 @@ logger = logging.getLogger(__name__)
 exit_flag = False
 files = {}
 
-# STILL WORK IN PROGESS, NOT YET COMPLETED.
-
 
 def search_for_magic(filename, start_line, magic_string):
     """Looks for a magic string and its line provided in command."""
-    logger.info(f"Looking for '{magic_string}' in {filename}.")
+    # logger.info(f"Looking for '{magic_string}' in {filename}.")
     line_num = -1
     with open(filename) as f:
         for line_num, line in enumerate(f):
@@ -35,7 +33,7 @@ def search_for_magic(filename, start_line, magic_string):
                 if magic_string in line:
                     logger.info(
                         f"Found {magic_string} on line {line_num + 1} "
-                        f"of {filename}")
+                        f"in file {filename}")
     return line_num + 1
 
 
